@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="accounts_view_container" stylesheets="@../../Styles/Profile.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banking.Controllers.Client.Profile">
+        <Text layoutX="425.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleT" text="Profile" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="79.0">
+      <font>
+         <Font size="24.0" />
+      </font></Text>
+        <VBox alignment="CENTER" layoutX="357.0" layoutY="321.0" prefHeight="168.0" prefWidth="150.0" AnchorPane.leftAnchor="357.0" AnchorPane.topAnchor="321.0">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account Number:" />
+            <Label fx:id="ch_acc_num" text="4893 1905" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Limit:" />
+            <Label fx:id="transaction_limit" text="10" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:" />
+            <Label fx:id="ch_acc_date" text="2024-01-19" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:" />
+            <Label fx:id="ch_acc_bal" text="\$3.000.00" />
+        </VBox>
+   <FontAwesomeIconView glyphName="USER" layoutX="394.0" layoutY="110.0" size="30" wrappingWidth="9.33331298828125" AnchorPane.leftAnchor="394.0" AnchorPane.topAnchor="84.28571510314941" />
+   <Line endX="70.6666259765625" endY="-7.62939453125E-6" layoutX="452.0" layoutY="117.0" startX="-67.33334350585938" startY="-7.62939453125E-6" stroke="#8b8787" />
+    <VBox alignment="CENTER" layoutX="626.0" layoutY="211.0" prefHeight="168.0" prefWidth="150.0" AnchorPane.topAnchor="211.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account Number:" />
+        <Label fx:id="sv_acc_num" text="4893 1905" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Withdrawal Limit" />
+        <Label fx:id="withdrawal_limit" text="10" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:" />
+        <Label fx:id="sv_acc_date" text="2024-01-19" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:" />
+        <Label fx:id="sv_acc_bal" text="\$3.000.00" />
+    </VBox>
+    <VBox alignment="CENTER" layoutX="100.0" layoutY="211.0" prefHeight="168.0" prefWidth="150.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="211.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" />
+        <Label fx:id="fName" text="4893 1905" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+        <Label fx:id="lName" text="10" />
+        <Text layoutX="45.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PayeeAddress:" />
+        <Label fx:id="pAddress" layoutX="46.0" layoutY="255.0" text="2024-01-19" />
+        <!-- <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />-->
+        <!-- <Label fx:id="password" text="\$3.000.00" /> -->
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:" />
+        <Label fx:id="dateCreated" text="2024-01-19" />
+    </VBox>
+   <Text layoutX="110.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Information's" />
+   <Text layoutX="387.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="checking Account" />
+   <Text layoutX="655.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account" />
+
+</AnchorPane>
